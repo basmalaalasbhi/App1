@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
-import 'loginScreen.dart';
-void main() {
-  runApp(MyAppbasmala());
-}
+import 'package:untitled2/View/LoginPage.dart';
+import 'package:get/get.dart';
 
-class MyAppbasmala extends StatelessWidget {
+
+void main() async {
+
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  GetMaterialApp(
       debugShowCheckedModeBanner: false,
-     home: loginScreenbasmala(),
+      home:LoginPage(),
     );
   }
 }
-
-
-
-
